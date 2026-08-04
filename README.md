@@ -1,5 +1,7 @@
 # CreativeMenu
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C3W0229LCP)
+
 [🇩🇪 Deutsche Version weiter unten](#deutsch)
 
 ## English

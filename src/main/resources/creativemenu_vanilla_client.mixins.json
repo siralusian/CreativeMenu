@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.creativemenu.client.mixin.vanilla",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "creativemenu.refmap.json",
+  "client": [
+    "CreativeModeTabAccessor",
+    "AbstractContainerScreenAccessor",
+    "ScreenInvoker",
+    "CreativeModeInventoryScreenMixin"
+  ],
+  "minVersion": "0.8"
+}

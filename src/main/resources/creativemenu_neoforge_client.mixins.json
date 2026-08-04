@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "com.creativemenu.client.mixin.neoforge",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "creativemenu.refmap.json",
+  "client": [
+    "CreativeModeTabRegistryMixin"
+  ],
+  "minVersion": "0.8"
+}

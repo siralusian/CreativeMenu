@@ -58,11 +58,12 @@ NeoForge modpack), but it's made by the same author:
   [CobbleDollars/Create](https://github.com/siralusian/CobbleCompanion-CobbleDollars-Create),
   [CobbleDollars/CustomNPCs](https://github.com/siralusian/CobbleCompanion-CobbleDollars-CustomNPCs),
   [CobblemonWorker](https://github.com/siralusian/CobbleCompanion-CobblemonWorker),
-  [Create/Let's Do](https://github.com/siralusian/CreateLetsDo),
   [AllInOne](https://github.com/siralusian/CobbleCompanion-AllInOne),
   [CobbleDollars-Bundle](https://github.com/siralusian/CobbleCompanion-CobbleDollarsBundle))
 - [CopycatSign](https://github.com/siralusian/CopycatSign) — a Copycat block that displays a
   custom picture.
+- [Create: Let's Do Automation](https://github.com/siralusian/CreateLetsDo) — automates Let's Do:
+  Farm & Charm blocks with Create.
 
 ---
 
@@ -127,8 +128,9 @@ in jedem NeoForge-Modpack), stammt aber vom selben Autor:
   [CobbleDollars/Create](https://github.com/siralusian/CobbleCompanion-CobbleDollars-Create),
   [CobbleDollars/CustomNPCs](https://github.com/siralusian/CobbleCompanion-CobbleDollars-CustomNPCs),
   [CobblemonWorker](https://github.com/siralusian/CobbleCompanion-CobblemonWorker),
-  [Create/Let's Do](https://github.com/siralusian/CreateLetsDo),
   [AllInOne](https://github.com/siralusian/CobbleCompanion-AllInOne),
   [CobbleDollars-Bundle](https://github.com/siralusian/CobbleCompanion-CobbleDollarsBundle))
 - [CopycatSign](https://github.com/siralusian/CopycatSign) — ein Copycat-Block, der ein frei
   wählbares Bild anzeigt.
+- [Create: Let's Do Automation](https://github.com/siralusian/CreateLetsDo) — automatisiert Let's
+  Do: Farm & Charm-Blöcke mit Create.

@@ -4,6 +4,8 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.78'
+    id 'com.modrinth.minotaur' version '2.+'
+    id 'net.darkhax.curseforgegradle' version '1.1.+'
 }
 
 version = mod_version
@@ -96,6 +98,41 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
+}
+
+// Modrinth/CurseForge-Upload (Nutzer-Vorgabe: Tokens NIEMALS im Repo, ausschliesslich aus den
+// lokalen Umgebungsvariablen MODRINTH_TOKEN/CURSEFORGE_TOKEN gelesen - fehlen sie, brechen die
+// beiden Tasks unten kontrolliert ab statt mit leerem Token einen Request zu schicken. Aufruf
+// bewusst manuell (./gradlew modrinth / ./gradlew publishCurseForge), kein automatischer Trigger
+// an build/publish gekoppelt.
+modrinth {
+    token = providers.environmentVariable('MODRINTH_TOKEN')
+    projectId = modrinth_id
+    versionNumber = mod_version
+    versionType = "release"
+    uploadFile = tasks.named('jar')
+    gameVersions = [minecraft_version]
+    loaders = ["neoforge"]
+    changelog = file("$rootDir/CHANGELOG.md").text
+    syncBodyFrom = file("$rootDir/README.md").text
+}
+
+tasks.register('publishCurseForge', net.darkhax.curseforgegradle.TaskPublishCurseForge) {
+    apiToken = providers.environmentVariable('CURSEFORGE_TOKEN').getOrElse('')
+    disableVersionDetection()
+
+    def mainFile = upload(curseforge_id, tasks.named('jar'))
+    mainFile.changelog = file("$rootDir/CHANGELOG.md").text
+    mainFile.changelogType = 'markdown'
+    mainFile.releaseType = 'release'
+    mainFile.addModLoader('NeoForge')
+    mainFile.addGameVersion(minecraft_version)
+    // CurseForge verlangt zusaetzlich zu Spielversion/Loader mindestens ein "Environment"-Tag aus
+    // der Gruppe Client/Server ("Both" ist selbst kein gueltiger Wert, siehe Live-Fund bei
+    // CobbleCompanion) - beide einzeln gesetzt.
+    mainFile.addEnvironment('Client')
+    mainFile.addEnvironment('Server')
+    mainFile.displayName = "${mod_name} ${mod_version}"
 }
 
 idea {

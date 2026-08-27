@@ -1,16 +1,13 @@
 # CreativeMenu
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C3W0229LCP)
-
 [🇩🇪 Deutsche Version weiter unten](#deutsch)
 
 ## English
 
 Makes the Creative inventory menu freely customizable — hide tabs, reorder them, build your own
-custom tabs, and (if you run a server) enforce a shared layout for your players. Standalone
-NeoForge mod, **no Cobblemon dependency**. Works in both singleplayer and multiplayer; the
-server-side "prescriptions" feature is naturally multiplayer-only, everything else is just as
-useful solo.
+custom tabs, and (if you run a server) enforce a shared layout for your players. Works in both
+singleplayer and multiplayer; the server-side "prescriptions" feature is naturally multiplayer-only,
+everything else is just as useful solo.
 
 ### What it does
 
@@ -31,12 +28,10 @@ useful solo.
 - **Open your personal editor**: `/creativemenu open` (or the shorter alias `/crm open`) — a
   drag-and-drop list of tabs/categories, live preview, hide/show toggles, and buttons to create or
   edit custom tabs/categories.
-- **Reset your local settings**: `/creativemenu resett true` (yes, that's the actual command —
-  note the double "t").
+- **Reset your local settings**: `/creativemenu resett true`
 - **Admin access** (needed for `/creativemenu server` below), independent from vanilla OP status:
   - `/creativemenu admin <name>` grants admin.
-  - **First admin on a fresh server**: run it once from the **server console** — the console can
-    always grant, regardless of OP status.
+  - **First admin on a fresh server**: run it once from the **server console**.
 - **Server-wide prescriptions** *(admin only)*: `/creativemenu server` opens the admin editor
   (separate tab/category lists, each entry can be pinned per OP level with allow-hide/allow-sort
   flags); `/creativemenu server resett true` resets the server-wide config.
@@ -44,26 +39,30 @@ useful solo.
   minimum OP level required for players to add/remove items, show/hide tabs, and sort tabs
   themselves; `/creativemenu permissions set <addremove|showhide|sort> <0-4>` changes one of them.
 
-### Building
+### Dependencies
 
-No third-party mod dependencies — this mod is fully standalone, nothing needed in `libs/`.
+No further mods are required to use CreativeMenu.
 
-### Other CobbleCompanion-family projects
+### Check out my other projects too
 
-CreativeMenu isn't part of the CobbleCompanion family (no Cobblemon dependency, works in any
-NeoForge modpack), but it's made by the same author:
+- [Area Claims](https://curseforge.com/minecraft/mc-mods/area-claims) — Lets players claim their
+  own area on your server.
+- [CobbleCompanion](https://curseforge.com/minecraft/mc-mods/cobblecompanion-all-in-one) —
+  companion tool for the Cobblemon mod.
+- [Create: Let's Do Automation](https://curseforge.com/minecraft/mc-mods/create-let-s-do) — lets
+  you automatically fill Let's Do work blocks using Create.
+- [CreativeMenu](https://curseforge.com/minecraft/mc-mods/creative-menu) — freely design your
+  Creative menu the way you want. Fully configurable in-game.
+- [CopycatSign](https://curseforge.com/minecraft/mc-mods/create-copycat-sign) — hang pictures on
+  your walls, Create trains, airships and more, with freely choosable border and back textures.
+- [Item Creator](https://curseforge.com/minecraft/mc-mods/itemcreator) — create items with
+  enchantments and more, entirely without /give commands.
+- [InvSpy](https://curseforge.com/minecraft/mc-mods/invspy) — powerful tool for server admins.
+  Check which player used a chest, or what your players are carrying in their inventory.
+- [MobTweaks](https://curseforge.com/minecraft/mc-mods/mobtweak) — tool for server admins. Control
+  which mobs may spawn where, adjust loot, or prevent world damage from Creepers, Endermen and co.
 
-- [CobbleCompanion](https://github.com/siralusian/CobbleCompanion) and its extensions/bundles
-  ([CobbleDollars](https://github.com/siralusian/CobbleCompanion-CobbleDollars),
-  [CobbleDollars/Create](https://github.com/siralusian/CobbleCompanion-CobbleDollars-Create),
-  [CobbleDollars/CustomNPCs](https://github.com/siralusian/CobbleCompanion-CobbleDollars-CustomNPCs),
-  [CobblemonWorker](https://github.com/siralusian/CobbleCompanion-CobblemonWorker),
-  [AllInOne](https://github.com/siralusian/CobbleCompanion-AllInOne),
-  [CobbleDollars-Bundle](https://github.com/siralusian/CobbleCompanion-CobbleDollarsBundle))
-- [CopycatSign](https://github.com/siralusian/CopycatSign) — a Copycat block that displays a
-  custom picture.
-- [Create: Let's Do Automation](https://github.com/siralusian/CreateLetsDo) — automates Let's Do:
-  Farm & Charm blocks with Create.
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C3W0229LCP)
 
 ---
 
@@ -71,8 +70,7 @@ NeoForge modpack), but it's made by the same author:
 
 Macht das Creative-Inventar-Menü frei gestaltbar – Tabs ausblenden, umsortieren, eigene
 Custom-Tabs bauen, und (falls du einen Server betreibst) ein einheitliches Layout für deine
-Spieler vorgeben. Eigenständige NeoForge-Mod, **keine Cobblemon-Abhängigkeit**. Funktioniert im
-Singleplayer und auf Servern; die Server-"Vorschriften"-Funktion ist naturgemäß nur für Server
+Spieler vorgeben. Funktioniert im Singleplayer und auf Servern; die Server-"Vorschriften"-Funktion ist naturgemäß nur für Server
 relevant, alles andere ist auch solo genauso nützlich.
 
 ### Was es macht
@@ -97,12 +95,11 @@ relevant, alles andere ist auch solo genauso nützlich.
 - **Eigenen Editor öffnen**: `/creativemenu open` (oder der kürzere Alias `/crm open`) – eine
   Drag&Drop-Liste aus Tabs/Kategorien, Live-Vorschau, Ein-/Ausblenden-Umschalter, sowie Buttons
   zum Erstellen/Bearbeiten von Custom-Tabs/-Kategorien.
-- **Eigene Einstellungen zurücksetzen**: `/creativemenu resett true` (ja, das ist der tatsächliche
-  Befehl – mit doppeltem „t").
+- **Eigene Einstellungen zurücksetzen**: `/creativemenu resett true`
 - **Admin-Zugang** (nötig für `/creativemenu server` unten), unabhängig vom Vanilla-OP-Status:
   - `/creativemenu admin <Name>` vergibt Admin-Rechte.
   - **Allererster Admin auf einem frischen Server**: einmalig über die **Server-Konsole**
-    ausführen – die Konsole darf immer berechtigen, unabhängig vom OP-Status.
+    ausführen.
 - **Server-Vorschriften** *(nur Admin)*: `/creativemenu server` öffnet den Admin-Editor (getrennte
   Tab-/Kategorie-Listen, jeder Eintrag pro OP-Stufe fixierbar mit Ein-/Ausblenden-/
   Sortieren-Erlauben-Flags); `/creativemenu server resett true` setzt die Server-Konfiguration
@@ -112,25 +109,19 @@ relevant, alles andere ist auch solo genauso nützlich.
   Sortieren dürfen; `/creativemenu permissions set <addremove|showhide|sort> <0-4>` ändert eine
   davon.
 
-### Bauen
+### Abhängigkeiten
 
-Keine Fremd-Mod-Abhängigkeiten – diese Mod ist komplett eigenständig, in `libs/` wird nichts
-benötigt.
+Es werden keine weiteren Mods benötigt, um CreativeMenu verwenden zu können.
 
-### Weitere Projekte aus der CobbleCompanion-Familie
+### Sieh dir auch meine anderen Projekte an
 
-CreativeMenu gehört nicht zur CobbleCompanion-Familie (keine Cobblemon-Abhängigkeit, funktioniert
-in jedem NeoForge-Modpack), stammt aber vom selben Autor:
+- [Area Claims](https://curseforge.com/minecraft/mc-mods/area-claims) — Erlaube es Spielern ihren eigenen Bereich auf deinem Server zu beanspruchen.
+- [CobbleCompanion](https://curseforge.com/minecraft/mc-mods/cobblecompanion-all-in-one) Hilfstool für die Cobblemon Mod
+- [Create: Let's Do Automation](https://curseforge.com/minecraft/mc-mods/create-let-s-do) — Ermöglicht das automatische Befüllen von Let's Do Arbeitsblöcken mithilfe von Create.
+- [CreativeMenu](https://curseforge.com/minecraft/mc-mods/creative-menu) — Gestalte dein Creative Menü frei nach deinen Wünschen. Alles ingame einstellbar.
+- [CopycatSign](https://curseforge.com/minecraft/mc-mods/create-copycat-sign) — Hänge Bilder an deine Wände, Züge, Luftschiffe und Co mit frei wählbaren Rand- und Rückseiten-Texturen.
+- [Item Creator](https://curseforge.com/minecraft/mc-mods/itemcreator) — Erzeuge Items mit Verzauberungen und Co ganz ohne /give Commands
+- [InvSpy](https://curseforge.com/minecraft/mc-mods/invspy) — Starkes Tool für Server-Betreiber. Prüfe welcher Spieler sich an einer Truhe bedient hat oder was deine Spieler im Inventar haben.
+- [MobTweaks](https://curseforge.com/minecraft/mc-mods/mobtweak) — Tool für Server-Betreiber. Steuere welche Mobs wo spawnen dürfen, passe den Loot an oder verhindere Schaden in der Welt durch Creeper, Enderman und co.
 
-- [CobbleCompanion](https://github.com/siralusian/CobbleCompanion) und seine
-  Erweiterungen/Bundles
-  ([CobbleDollars](https://github.com/siralusian/CobbleCompanion-CobbleDollars),
-  [CobbleDollars/Create](https://github.com/siralusian/CobbleCompanion-CobbleDollars-Create),
-  [CobbleDollars/CustomNPCs](https://github.com/siralusian/CobbleCompanion-CobbleDollars-CustomNPCs),
-  [CobblemonWorker](https://github.com/siralusian/CobbleCompanion-CobblemonWorker),
-  [AllInOne](https://github.com/siralusian/CobbleCompanion-AllInOne),
-  [CobbleDollars-Bundle](https://github.com/siralusian/CobbleCompanion-CobbleDollarsBundle))
-- [CopycatSign](https://github.com/siralusian/CopycatSign) — ein Copycat-Block, der ein frei
-  wählbares Bild anzeigt.
-- [Create: Let's Do Automation](https://github.com/siralusian/CreateLetsDo) — automatisiert Let's
-  Do: Farm & Charm-Blöcke mit Create.
+*AI-generated content: this mod was developed with AI assistance (Claude). / KI-generierte Inhalte: Diese Mod wurde mit KI-Unterstützung (Claude) entwickelt.*
